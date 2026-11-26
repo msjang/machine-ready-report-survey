@@ -54,6 +54,7 @@ KISTI는 대한민국 연구보고서가 모이는 종착지입니다. 그런데
 |---|---|
 | [비교 리포트](report.md) | 일본·중국·미국·EU·영국의 입력·보고서·재표현 비교 |
 | [미국 DoE 심층](findings-usa-doe.md) | ESnet 보고서 vs KISTI 연차보고서, 기계가독성 관점 |
+| [중국 표준 GB/T 7713.3](findings-gbt.md) | 보고서를 XML·메타데이터·3선표로 규정한 2014년 국가표준 |
 | [초록·요약문](findings-abstract.md) | 서지 메타데이터와 요약을 한 표에 섞는 한국 vs 나누는 해외 |
 | [표 사용](findings-tables.md) | 요약·목차·강조까지 표로 만드는 한국 vs 데이터일 때만 쓰는 해외 |
 | [버드뷰](findings-birdview.md) | 국가별 보고서 전 쪽 썸네일 — 한국의 표의 벽 vs 해외의 서술 |

@@ -41,6 +41,7 @@ nav:
   - { name: 개요,        url: / }
   - { name: 비교 리포트,  url: /report.html }
   - { name: 미국 DoE 심층, url: /findings-usa-doe.html }
+  - { name: 중국 표준 GB/T, url: /findings-gbt.html }
   - { name: 초록·요약문,  url: /findings-abstract.html }
   - { name: 표 사용,      url: /findings-tables.html }
   - { name: 버드뷰,       url: /findings-birdview.html }
