@@ -8,7 +8,34 @@
 
 ## 개요와 기준점
 
-한국 연구보고서의 "사업화 계획 및 무역 수지 개선 효과" 표는 3단 병합 헤더 안에 사업화 소요기간, 예산, 매출 전망, 시장점유율, 수입대체·수출을 한 장에 담습니다. 해당 사항이 없어도 빈 표가 그대로 실립니다. 이 문서는 같은 종류의 정보를 일본, 중국, 미국, EU, 영국이 어떻게 받고 어떻게 다시 보여주는지 비교합니다.
+한국 연구보고서의 "사업화 계획 및 무역 수지 개선 효과" 표는 3단 병합 헤더 안에 사업화 소요기간, 예산, 매출 전망, 시장점유율, 수입대체·수출을 한 장에 담습니다. 해당 사항이 없어도 빈 표가 그대로 실립니다. 아래가 그 표입니다. 예상 매출규모와 시장점유율, 수입대체·수출을 현재·3년 후·5년 후로 나누어 받는 전망형 표입니다.
+
+<style>
+.kr-form{border-collapse:collapse;width:100%;font-size:13px;line-height:1.5}
+.kr-form td{border:1px solid #c7ccd1;padding:8px 9px;text-align:center;vertical-align:middle}
+.kr-form td.l{background:#eef0f2;font-weight:600}
+.kr-form td.h{background:#eef0f2;font-weight:600}
+.kr-form td.e{height:30px}
+</style>
+
+<table class="kr-form">
+<tbody>
+<tr><td class="l" colspan="3">성과</td><td class="e" colspan="3"></td></tr>
+<tr><td class="l" rowspan="8">사업화 계획</td><td class="l" colspan="2">사업화 소요기간(년)</td><td class="e" colspan="3"></td></tr>
+<tr><td class="l" colspan="2">소요예산(천원)</td><td class="e" colspan="3"></td></tr>
+<tr><td class="l" colspan="2" rowspan="2">예상 매출규모(천원)</td><td class="h">현재까지</td><td class="h">3년 후</td><td class="h">5년 후</td></tr>
+<tr><td class="e"></td><td class="e"></td><td class="e"></td></tr>
+<tr><td class="l" rowspan="3">시장<br>점유율</td><td class="l">단위(%)</td><td class="h">현재까지</td><td class="h">3년 후</td><td class="h">5년 후</td></tr>
+<tr><td class="l">국내</td><td class="e"></td><td class="e"></td><td class="e"></td></tr>
+<tr><td class="l">국외</td><td class="e"></td><td class="e"></td><td class="e"></td></tr>
+<tr><td class="l" colspan="2">향후 관련기술, 제품을 응용한 타 모델, 제품 개발계획</td><td class="e" colspan="3"></td></tr>
+<tr><td class="l" rowspan="3">무역 수지<br>개선 효과(천원)</td><td class="l" colspan="2" rowspan="2">수입대체(내수)</td><td class="h">현재</td><td class="h">3년 후</td><td class="h">5년 후</td></tr>
+<tr><td class="e"></td><td class="e"></td><td class="e"></td></tr>
+<tr><td class="l" colspan="2">수 출</td><td class="e" colspan="3"></td></tr>
+</tbody>
+</table>
+
+<p style="font-size:13px;color:#5b6068;margin:-8px 0 18px">▲ 한국 연구보고서 표준 양식의 "사업화 계획 및 무역 수지 개선 효과" 표. 원본 양식 캡처는 <a href="sources/korea/kr-commercialization-table-form_2026-11-26.png">sources/korea/</a>에 보존했다. 이 문서는 같은 종류의 정보를 일본, 중국, 미국, EU, 영국이 어떻게 받고 어떻게 다시 보여주는지 비교한다.</p>
 
 양식형 표의 문제는 사업화 표만의 것이 아닙니다. 아래는 기준 보고서로 삼은 KISTI 연차보고서의 정량적 연구개발성과 표입니다. 좁은 칸에 논문 제목이 들어가 "강성인증의 신원연합 적용을 위한 TOTP 검증자 및 대리인증자의 개발"이 글자 단위로 끊깁니다. 데이터가 판형에 묶여 있어 사람도 읽기 어렵고 기계도 칸의 의미를 되살리기 어렵습니다.
 
