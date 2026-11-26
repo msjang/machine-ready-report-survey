@@ -73,6 +73,40 @@
 
 썸네일 한 장으로 "표를 데이터에만 쓰는가, 거의 모든 것에 쓰는가"가 드러납니다. 썸네일 격자는 [`tools/birdview.py`](tools/birdview.py)(`pdftoppm` 저해상 렌더 후 타일링)로 누구나 다시 만들 수 있습니다. 일본 NEDO 보고서를 더한 국가별 버드뷰 모음은 [버드뷰](findings-birdview.md)에 있습니다.
 
+## 챕터별 표 비율 — 2024 vs 2025
+
+버드뷰가 인상이라면, 이번에는 쪽마다 재어 수치로 봅니다. 각 쪽에서 **세로 괘선이 덮는 세로 범위를 쪽 높이로 나눈 값**을 "표 점유율"로 삼았습니다(괘선이 2줄 이상일 때만 셈, 그림·사진은 괘선이 없으면 0, 박스로 감싼 본문·목차도 표로 집계). 측정 도구는 [`tools/measure_tables.py`](tools/measure_tables.py)입니다.
+
+정량적 연구개발성과(실적 목록)와 부록은 본래 표일 수밖에 없으니 **별표(\*)**로 구분했습니다.
+
+<style>
+.tcov td{vertical-align:top;font-size:13.5px}
+.tcov td:first-child{text-align:left}
+.tcov td>div{margin-top:4px}
+</style>
+
+<table class="tcov"><thead><tr><th>챕터</th><th>2024 표 점유율</th><th>2025 표 점유율</th></tr></thead><tbody>
+<tr><td style="text-align:left">1. 개요</td><td>62% <span style="color:#5b6068">(14쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:62%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>69% <span style="color:#5b6068">(19쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:69%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr><td style="text-align:left">2. 수행 과정·내용</td><td>31% <span style="color:#5b6068">(84쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:31%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>25% <span style="color:#5b6068">(92쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:25%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr><td style="text-align:left">3. 정성적 성과 (2024)</td><td>29% <span style="color:#5b6068">(53쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:29%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td><span style="color:#9aa0a6">—</span></td></tr>
+<tr><td style="text-align:left">3. 정량적 성과 *</td><td>16% <span style="color:#5b6068">(7쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:16%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>70% <span style="color:#5b6068">(34쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:70%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr><td style="text-align:left">3. 계획외·기여</td><td>18% <span style="color:#5b6068">(10쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:18%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>34% <span style="color:#5b6068">(9쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:34%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr><td style="text-align:left">4. 활용 계획</td><td>38% <span style="color:#5b6068">(2쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:38%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>13% <span style="color:#5b6068">(8쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:13%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr><td style="text-align:left">부록 *</td><td><span style="color:#9aa0a6">—</span></td><td>61% <span style="color:#5b6068">(73쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:61%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<tr style="font-weight:700;background:#f6f8fa"><td style="text-align:left">서술 챕터 평균 (정량성과·부록 제외)</td><td>32% <span style="color:#5b6068">(163쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:32%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>32% <span style="color:#5b6068">(128쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:32%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+</tbody></table>
+
+<p style="font-size:13px;color:#5b6068">파랑 = 2024, 주황 = 2025. 숫자는 챕터 평균 표 점유율과 쪽수.</p>
+
+읽히는 것은 이렇습니다.
+
+- **정량적 성과와 부록을 빼도, 서술 챕터의 약 3분의 1(32%)이 표입니다.** 그리고 이 값은 2024년과 2025년이 **거의 같습니다**(32% → 32%). 양식을 손봐도 서술을 표로 짜는 비율은 바뀌지 않았습니다.
+- **가장 표가 많은 챕터는 "개요"입니다.** 과제를 서술로 소개해야 할 개요 챕터가 2024년 62%, 2025년 69%로, 쪽의 86~90%가 표에 가깝습니다. 서술이어야 할 자리를 표가 차지하고, 2025년에는 오히려 더 늘었습니다.
+- **본문의 대부분을 차지하는 "수행 과정·내용"(84~92쪽)도 25~31%가 표입니다.** 네 쪽에 한 쪽꼴 이상이 표입니다.
+- **29% 늘어난 분량은 서술이 아니라 표로 갔습니다.** 2024년 희박했던 정량적 성과(16%, 7쪽)가 2025년 조밀해지고(70%, 34쪽), 73쪽짜리 부록(61%)이 새로 붙었습니다. "정량적 성과는 어쩔 수 없다"를 인정해도, 늘어난 쪽은 사람이 읽을 서술이 아니라 표였습니다.
+
+요컨대 정량적 성과를 논외로 쳐도, 한국 보고서는 개요부터 본문까지 서술 챕터의 3분의 1 안팎이 표이고, 그 비율은 1년 사이 바뀌지 않았습니다.
+
 ## 비교 요약
 
 | 국가 | 목차 | 요약·초록 | 본문 강조 | 표를 쓰는 곳 |
