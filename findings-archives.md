@@ -14,6 +14,19 @@ NSF 과제의 메타데이터는 과제계획서나 보고서가 아니라 [Awar
 
 ![NSF Award Details 페이지. 기관·기간·금액·연도별 집행액·연구책임자 목록이 필드:값으로 정리돼 있다](images/nsf-award-metadata.png)
 
+### 식별자 하나가 페이지이자 API
+
+NSF에서 과제 식별자(award ID)는 사람용 웹페이지이면서 동시에 **인증 없는 공개 API 엔드포인트**입니다.
+
+```text
+사람용  https://www.nsf.gov/awardsearch/show-award/?AWD_ID=<번호>
+기계용  https://api.nsf.gov/services/v1/awards/<번호>.json   (인증 불요)
+```
+
+API 응답에는 과제 메타데이터와 **산출 논문 목록이 DOI와 함께** 담깁니다. 다년 과제 전체가 식별자 하나이고, 연차별 배정액·변경이력은 그 안의 속성(필드)입니다. 번호를 매년 바꾸지 않습니다.
+
+공개(open)와 참조 가능(referenceable)은 다릅니다. 로그인·팝업 뒤에 있으면 공개돼 있어도 기계가 가리킬 수 없습니다. **식별자가 곧 주소이고 주소가 곧 API일 때**, 아카이브에 쌓인 과제가 비로소 기계가 읽고 이어 붙일 수 있는 참조 대상이 됩니다. 과제–논문–데이터–연구자를 잇는 성과 그래프는 이런 영구 식별자 위에서만 자동으로 만들어집니다.
+
 ### 보고서 템플릿은 가볍다
 
 [NSF Project Report Template](https://resources.research.gov/common/attachment/Desktop/NSF%20Project%20Report%20Template.pdf)은 성과·참여자·영향을 서술로 받을 뿐, 협력자 명단(COA)이나 회계·예산 표를 묻지 않습니다. 그런 정보는 이미 award DB와 별도 폼에 있으니, 보고서에 중복해 넣지 않습니다.

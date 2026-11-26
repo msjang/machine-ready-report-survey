@@ -49,7 +49,7 @@
 | NSF Project Outcomes Report 안내 | [원문](https://nsf.gov/awards/report-your-outcomes) | [텍스트](sources/usa/nsf-report-your-outcomes_2026-11-26.md) · [화면](sources/usa/nsf-report-your-outcomes_2026-11-26.png) |
 | NSF POR 작성 가이드 | [원문](https://resources.research.gov/common/attachment/Desktop/PORPreparingandSubmittingQuickReferenceGuide.pdf) | [텍스트](sources/usa/nsf-por-guide_2026-11-26.txt.md) (원본 1MB 초과, 텍스트만) |
 | NSF DCL (인용 정보 자동 첨부) | [원문](https://www.nsf.gov/funding/opportunities/dcl-national-science-foundation-directorate-social-behavioral/nsf16-141) | [텍스트](sources/usa/nsf-dcl-citation_2026-11-26.md) |
-| NIH RPPR 작성 안내 (UMD) | [원문](https://www.ora.umd.edu/sites/default/files/2024-07/RPPR%20NIH.pdf) | **404 — 삭제됨.** 본문은 eRA·UCLA 등 다른 NIH 출처로 대체 |
+| NIH RPPR 작성 안내 (A–I 섹션) | 원 UMD 사본 404 → [eRA: How Do I Fill Out the RPPR Forms](https://www.era.nih.gov/erahelp/commons/Commons/rppr/rppr_fields.htm) · [공식 Instruction Guide](https://grants.nih.gov/grants/rppr/rppr_instruction_guide.pdf) | [eRA 화면 보존](sources/usa/era-rppr-fields_2026-11-26.png) (섹션 A–I 나열) |
 | SBIR 사업화 보고 양식 정의 (OMB) | [원문](https://omb.report/icr/202610-3245-001/doc/173864100.pdf) | [PDF](sources/usa/sbir-commercialization-database_2026-11-26.pdf) · [텍스트](sources/usa/sbir-commercialization-database_2026-11-26.txt.md) (수집 시 403, 원문 직접 받아 제공) |
 
 ## EU — Horizon Europe · ERC · CORDIS
@@ -95,7 +95,7 @@
 | 문서 | 사유 | 조치 |
 |---|---|---|
 | 저장성 과기상 추천서 (.doc) | 404 삭제 | 동일 구조 동지대 공개본으로 복구·보존 |
-| NIH RPPR 안내 (UMD) | 404 삭제 | eRA·UCLA 등 다른 NIH 출처로 대체 |
+| NIH RPPR 안내 (UMD) | 404 삭제 | eRA 공식 페이지·Instruction Guide로 대체 |
 | SBIR 양식 정의 (OMB) | 403 (해결) | 원문을 직접 받아 sources/usa/ 에 보존 |
 | ERC 과학보고 가이드라인 | 404 경로 변경 | ERC 사이트에서 최신본 재확인 필요 |
 | H2020 확산·활용 (Business Finland) | 404 경로 변경 | Vinnova 자료로 동일 내용 확인 |
