@@ -40,6 +40,33 @@ GB/T 7713.3은 보고서의 각 구성요소를 **상태(필수/선택)와 기�
 
 이것은 정확히 이 조사가 제안하는 구조입니다. 보고서의 내용을 `<title>`·`<project_no>`·`<finish_date>`처럼 **구조화해 한 번 쓰고**, 목차·번호·판형은 **출력 단계(XSL)에서 자동으로 생성**합니다. 사람이 종이 판형에 데이터를 박아 넣는 대신, 데이터는 구조로 두고 판형은 변환으로 얻습니다.
 
+## 그림·표·수식은 어떻게 담나
+
+보고서에는 글과 표만 있는 것이 아니라 그림(이미지)과 수식도 있습니다. 작성 규칙이 본문만 다루고 그림을 빼놓았다면 반쪽짜리일 텐데, GB/T 7713.3의 DTD는 이것들을 **모두 구조화 요소로** 규정합니다.
+
+![GB/T 7713.3 부록 G의 DTD. figure·graphic·inlinegraphic 요소와 fileref·format·align·width 속성 정의](images/gbt-figure-dtd.png)
+
+- **절(section)은 문단·그림·표·수식을 형제 요소로** 담습니다: `section (… paragraph | figure | table | equation | inlinegraphic …)`
+- **그림 = 캡션 + 이미지**: `figure (caption?, graphic+)`. 속성에 `label`(ID, 상호참조용)과 `pgwide`(페이지 폭 여부)를 둡니다
+- **이미지(graphic)는 바이너리를 본문에 박는 게 아니라 외부 파일을 가리킵니다**: `graphic`의 속성이 `fileref`(이미지 파일 경로)·`format(GIF|JPEG)`·`align`·`width`(기본 80%)입니다
+- 줄 안에 흐르는 그림은 `inlinegraphic`으로 따로 둡니다
+- **수식도 이미지로 담되 대체 텍스트를 붙입니다**: `equation (caption?, alt?, graphic+)` — 수식 이미지(graphic)에 `alt`(대체 설명)를 함께 둬, 이미지로 깨져도 의미가 남습니다
+
+```text
+<!ELEMENT figure (caption?, graphic+)>
+<!ATTLIST figure  label ID #IMPLIED  pgwide CDATA #IMPLIED >
+<!ELEMENT graphic (#PCDATA)>
+<!ATTLIST graphic  fileref CDATA #IMPLIED  format (GIF|JPEG) #IMPLIED
+                   align (left|center|right) #IMPLIED  width CDATA "80%" >
+<!ELEMENT equation (caption?, alt?, graphic+)>   <!-- 수식 = 이미지 + 대체텍스트 -->
+```
+
+그리고 번호·캡션·상호참조·목록이 전부 **구조에서 자동으로** 나옵니다. 그림마다 `label`(ID)과 번호가 붙고, `crossref`로 "그림 3-5 참조"를 걸며, XSL이 `//body//figure`를 훑어 **그림목차(插图清单)를 자동 생성**합니다. 사람이 그림 목록을 손으로 유지하지 않습니다.
+
+[앞서 본 제5장](findings-gbt.md#편집-규칙이-곧-기계가독가독-규칙)의 그림 규칙(자명성·가독성, 색 지양, 전자판 내부 링크, 폭이 넓으면 90° 회전, 续图)이 모두 이 구조 위에서 동작합니다.
+
+**함의.** 이미지를 "복사해 붙인 덩어리"가 아니라 **캡션·번호·ID를 가진 참조된 파일**로 다루면, 기계가 그림을 식별하고 열거하고 상호참조할 수 있습니다. 반대로 한국 보고서처럼 이미지를 표 칸에 박거나 본문에 떠 있게 두면, 그림은 번호도 목록도 없이 판형에 묻힙니다.
+
 ## 편집 규칙이 곧 기계가독·가독 규칙
 
 제5장 편집 규칙에는 [미국 DoE 보고서 분석](findings-usa-doe.md)에서 뽑은 시사점과 같은 원칙이 이미 명문화돼 있습니다.
