@@ -98,5 +98,7 @@ GB/T 7713.3은 보고서의 각 구성요소를 **상태(필수/선택)와 기�
 
 ## 자료
 
+- 표준 전문의 비공식 한국어 참고 번역: [별첨 C-1](appendix-c1-gbt-ko.md)
+
 - [GB/T 7713.3-2014 전문(보존)](sources/china/gbt-7713-3-2014_2026-11-26.txt.md) · [원문 PDF](sources/china/gbt-7713-3-2014_2026-11-26.pdf)
 - 보존 쪽 이미지: [표 1 구성요소](sources/china/gbt-7713-3-table1_2026-11-26.png) · [부록 G DTD/XSL](sources/china/gbt-7713-3-dtd_2026-11-26.png) · [제5장 편집규칙](sources/china/gbt-7713-3-section5_2026-11-26.png)

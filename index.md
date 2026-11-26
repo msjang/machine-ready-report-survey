@@ -137,7 +137,7 @@ title: 핵심 리포트
 
 ## 3. 모범 두 가지
 
-**중국 GB/T 7713.3-2014.** 과학기술보고 국가표준이 보고서를 서술·구조·관리·보존 메타데이터의 묶음으로 정의하고, 부록에 보고서용 DTD(XML 스키마)와 XSL 양식표를 싣습니다. 내용은 XML로, 판형은 XSL로 분리한 설계를 2014년에 표준으로 정했습니다. 원문은 [보존 PDF](sources/china/gbt-7713-3-2014_2026-11-26.pdf), 상세 분석은 [별첨 C](appendix-c-gbt.md)에 있습니다.
+**중국 GB/T 7713.3-2014.** 과학기술보고 국가표준이 보고서를 서술·구조·관리·보존 메타데이터의 묶음으로 정의하고, 부록에 보고서용 DTD(XML 스키마)와 XSL 양식표를 싣습니다. 내용은 XML로, 판형은 XSL로 분리한 설계를 2014년에 표준으로 정했습니다. 원문은 [보존 PDF](sources/china/gbt-7713-3-2014_2026-11-26.pdf), 전문의 한국어 참고 번역은 [별첨 C-1](appendix-c1-gbt-ko.md), 상세 분석은 [별첨 C](appendix-c-gbt.md)에 있습니다.
 
 ![GB/T 7713.3 부록 G. 과기보고 DTD가 표지·본문·후부를 XML 요소로 정의한다](images/gbt-dtd.png)
 
@@ -170,6 +170,7 @@ title: 핵심 리포트
 | [A. 국가별 상세 비교](appendix-a-countries.md) | 일본·중국·미국·EU·영국의 입력·보고서·재표현 |
 | [B. 미국 DoE·ESnet 심층](appendix-b-doe.md) | ESnet 보고서와 KISTI 연차보고서의 구조 비교, 시사점 6가지 |
 | [C. 중국 GB/T 7713.3](appendix-c-gbt.md) | 메타데이터 4종, DTD·XSL, 그림·표·수식 규정 |
+| [C-1. GB/T 7713.3 한국어 참고 번역](appendix-c1-gbt-ko.md) | 표준 전문의 비공식 한국어 번역 |
 | [D. 초록·요약문](appendix-d-abstract.md) | 서지정보와 요약을 한 표에 섞는 한국과 나누는 해외, 2024→2025 |
 | [E. 표 사용 분석](appendix-e-tables.md) | 표 4분류, 챕터별 신호등, 국가별 버드뷰, NTIS 복사·붙여넣기 |
 | [F. 아카이브·식별자·연구지원 안내](appendix-f-archives.md) | 국가별 아카이브, NSF award·API, 대학·지원기관 안내 |

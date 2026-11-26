@@ -11,6 +11,7 @@ title: 별첨
 | [A. 국가별 상세 비교](appendix-a-countries.md) | 일본·중국·미국·EU·영국이 성과를 어떤 필드로 받고, 어떤 보고서로 만들며, 공개 DB에서 어떻게 보여주는가 | 2절 |
 | [B. 미국 DoE·ESnet 심층](appendix-b-doe.md) | ESnet 보고서(427쪽)와 KISTI 연차보고서를 구조·가독성 관점에서 비교, 시사점 6가지 | 1절 |
 | [C. 중국 GB/T 7713.3](appendix-c-gbt.md) | 보고서를 메타데이터·XML·3선표로 규정한 2014년 국가표준 | 3절 |
+| [C-1. GB/T 7713.3 한국어 참고 번역](appendix-c1-gbt-ko.md) | 표준 전문의 비공식 한국어 번역(부속서 A~G, DTD·XSL 포함) | 3절 |
 | [D. 초록·요약문](appendix-d-abstract.md) | 서지정보와 요약을 한 표에 섞는 한국과 나누는 해외, 2024년과 2025년 양식 비교 | 1절 |
 | [E. 표 사용 분석](appendix-e-tables.md) | 표 4분류, 챕터별 표 점유율 신호등, 국가별 전 쪽 버드뷰, NTIS 복사·붙여넣기 사례 | 1절 |
 | [F. 아카이브·식별자·연구지원 안내](appendix-f-archives.md) | 국가별 보고서 아카이브, NSF award와 공개 API, 대학·지원기관의 작성 안내 | 3·5절 |
