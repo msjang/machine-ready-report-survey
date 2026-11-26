@@ -58,6 +58,7 @@ KISTI는 대한민국 연구보고서가 모이는 종착지입니다. 그런데
 | [초록·요약문](findings-abstract.md) | 서지 메타데이터와 요약을 한 표에 섞는 한국 vs 나누는 해외 |
 | [표 사용](findings-tables.md) | 요약·목차·강조까지 표로 만드는 한국 vs 데이터일 때만 쓰는 해외 |
 | [버드뷰](findings-birdview.md) | 국가별 보고서 전 쪽 썸네일 — 한국의 표의 벽 vs 해외의 서술 |
+| [아카이브](findings-archives.md) | R&D 보고서가 쌓이는 국가별 아카이브와 메타데이터 분리(NSF 등) |
 | [출처](sources.md) | 인용 원문의 URL·수집일·보존 사본 경로 |
 | [남은 질문](open-questions.md) | 아직 확인하지 못한 로그인 전용 화면 등 |
 | [작성 규칙](PROCESS.md) | 수집·정정·커밋 규칙 |

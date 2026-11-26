@@ -45,6 +45,7 @@ nav:
   - { name: 초록·요약문,  url: /findings-abstract.html }
   - { name: 표 사용,      url: /findings-tables.html }
   - { name: 버드뷰,       url: /findings-birdview.html }
+  - { name: 아카이브,     url: /findings-archives.html }
   - { name: 출처,        url: /sources.html }
   - { name: 남은 질문,    url: /open-questions.html }
   - { name: 작성 규칙,    url: /PROCESS.html }
