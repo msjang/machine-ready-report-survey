@@ -1,0 +1,47 @@
+# country	slug	kind	shot	url	title
+japan	jsps-jisseki-gaiyo	html	y	https://www-shinsei.jsps.go.jp/kaken/kakenhi_taiken/taiken_free/kofu/shinsei/pages/jissekiH/inputGaiyo.html	JSPS 科研費 체험판 — 연구실적 개요 입력 화면
+japan	jsps-jisseki-happyo	html	y	https://www-shinsei.jsps.go.jp/kaken/kakenhi_taiken/taiken_free/kofu/shinsei/pages/jissekiH/inputHappyo.html	JSPS 科研費 체험판 — 연구발표 입력 화면
+japan	jsps-jisseki-zaisanken	html	y	https://www-shinsei.jsps.go.jp/kaken/kakenhi_taiken/taiken_free/kofu/shinsei/pages/jissekiH/inputZaisanken.html	JSPS 科研費 체험판 — 산업재산권 입력 화면
+japan	jsps-yoshiki-f7-2	pdf	n	https://www.jsps.go.jp/j-grantsinaid/16_rule/data/29_dl/f-07-2_rei_chui.pdf	様式 F-7-2 실적보고서 기재례
+japan	jsps-c41-checklist	pdf	n	https://www.jsps.go.jp/file/storage/kaken_g_4594/r7jisseki_shourei_checklist_kikan.pdf	様式 C-41 연구성과보고서 제출 점검표
+japan	kaken-top	html	n	https://kaken.nii.ac.jp/	KAKEN 데이터베이스 첫 화면
+japan	kaken-project-18H02839	html	y	https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-18H02839/	KAKEN 과제 페이지 예시 (18H02839)
+china	most-nstmis-manual	pdf	n	https://service.most.gov.cn/u/cms/static/201806/12145654y1jn.pdf	国家科技管理信息系统 이용 안내
+china	huhhot-acceptance	html	n	https://lawinsider.com/zh/contracts/fZbOhHhewDc	후허하오터시 과제 검수 자료 안내
+china	gbt-7713-3-2014	pdf	n	https://lib.tsinghua.edu.cn/wj/GBT7713_3-2014.pdf	GB/T 7713.3-2014 과기보고 작성규칙
+china	most-report-number	pdf	n	https://www.most.gov.cn/ztzl/zdzx/tztg/201405/P020140526386090154713.pdf	중대전항 과기보고 작성 요점 (보고서 번호 형식)
+china	seu-embargo	pdf	n	https://kjc.seu.edu.cn/_upload/article/files/0b/26/f18499fc415b8d6b323a58e3d2f0/98a22588-7936-4af0-8027-fbf6e754c561.pdf	과기보고 공개 유예 안내
+china	gbt-30535-metadata	pdf	n	https://most.gov.cn/ztzl/jlkjbg/kjbgxxjl/201409/P020140915541814539196.pdf	과기보고 메타데이터 규범 (GB/T 30535)
+china	zhejiang-award-recommendation	doc	y	https://kyc.hznu.edu.cn/upload/Attach/mrbj/302089459.doc	저장성 과학기술상 추천서 (경제효익 표)
+china	nstrs-top	html	y	https://www.nstrs.cn/	国家科技报告服务系统 첫 화면
+usa	rppr-nih	pdf	n	https://www.ora.umd.edu/sites/default/files/2024-07/RPPR%20NIH.pdf	NIH RPPR 작성 안내
+usa	era-rppr-c-products	html	y	https://www.era.nih.gov/erahelp/commons/Commons/rppr/Forms/C.Products.htm	eRA Commons RPPR C. Products 섹션
+usa	nih-rppr-questions	pdf	n	https://medschool.ucla.edu/sites/g/files/oketem306/files/media/documents/NIH-RPPR-Progress-Report-Questions.pdf	NIH RPPR 질문 목록
+usa	sbir-commercialization-guide	pdf	n	https://www.sbir.gov/sites/default/files/Guide_for_completing_commercialization_Report_SBIR_Gov.pdf	SBIR Company Commercialization Report 작성 안내
+usa	sbir-form-definition	pdf	n	https://omb.report/icr/202610-3245-001/doc/173864100.pdf	SBIR 사업화 보고 양식 정의 (OMB)
+usa	sbir-performance-benchmarks	html	y	https://www.sbir.gov/performance-benchmarks	SBIR 사업화율 벤치마크
+usa	nsf-sbir-phase2-pre2019	pdf	y	https://seedfund.nsf.gov/assets/files/awardees/Phase_II_Reporting_Pre-2019.pdf	NSF SBIR Phase II 보고 서식 (2019년 이전, Revenue Breakdown)
+usa	nsf-report-your-outcomes	html	y	https://nsf.gov/awards/report-your-outcomes	NSF Project Outcomes Report 안내
+usa	nsf-por-guide	pdf	n	https://resources.research.gov/common/attachment/Desktop/PORPreparingandSubmittingQuickReferenceGuide.pdf	NSF POR 작성 가이드
+usa	nsf-dcl-citation	html	n	https://www.nsf.gov/funding/opportunities/dcl-national-science-foundation-directorate-social-behavioral/nsf16-141	NSF DCL (인용 정보 자동 첨부)
+eu	ec-continuous-reporting	html	n	https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867968/Continuous+reporting+on+milestones+deliverables	EC Continuous reporting 매뉴얼
+eu	businessfinland-h2020-dissemination	pdf	n	https://www.businessfinland.fi/4ab659/globalassets/finnish-customers/horizon-2020/esitysaineistot/dissemination-and-exploitation-under-h2020_rommens.pdf	H2020 확산·활용 보고 (Business Finland)
+eu	ihi-project-documents	html	n	https://www.ihi.europa.eu/resources-projects/project-documents	IHI 과제 문서 (정기보고 기한)
+eu	heidelberg-he-periodic-template	bin	n	https://backend.uni-heidelberg.de/de/dokumente/horizon-europe-periodic-report-template/download	Horizon Europe 정기보고 템플릿
+eu	vinnova-h2020-dissemination	pdf	n	https://www.vinnova.se/globalassets/mikrosajter/horisont-2020/dokument/h2020_sweden-20112018_disseminationexploitation.pdf	H2020 확산·활용 (Vinnova)
+eu	erc-scientific-reporting-guidelines	pdf	n	https://erc.europa.eu/system/files/2024-04/ERC-Scientific-Reporting-Guidelines.pdf	ERC 과학보고 가이드라인
+eu	erc-financial-reporting	html	n	https://erc.europa.eu/manage-your-project/financial-reporting	ERC 재무보고 안내 (템플릿 자동 채움)
+eu	cordis-top	html	y	https://cordis.europa.eu/	CORDIS 첫 화면
+uk	ukri-reporting	html	n	https://www.ukri.org/manage-your-award/reporting-your-projects-outcomes/	UKRI 성과보고 안내
+uk	cambridge-researchfish-workshop	pdf	n	https://www.research-services.admin.cam.ac.uk/sites/default/files/Researchfish%20Node%20Admin%20Workshop%2004%20Dec%202025.pdf	Cambridge Researchfish 운영 워크숍 자료
+uk	ukri-what-to-report	html	y	https://www.ukri.org/manage-your-award/reporting-your-projects-outcomes/what-you-need-to-report	UKRI 보고 항목 (공통 성과 유형)
+uk	uwe-common-question-set	pdf	n	https://www.uwe.ac.uk/-/media/uwe/documents/research/research-outcomes-common-question-set.pdf	Researchfish Common Question Set (UWE)
+uk	warwick-common-question-set	pdf	n	https://warwick.ac.uk/services/ris/systems/researchfish/research_outcomes_common_question_set.pdf	Researchfish Common Question Set (Warwick)
+uk	warwick-common-outcomes-overview	pdf	n	https://warwick.ac.uk/services/ris/systems/researchfish/researchfish_common_outcomes_overview_december2016.pdf	Researchfish 공통 성과 유형 개요 (Warwick)
+uk	cambridge-research-outcomes	html	n	https://www.research-services.admin.cam.ac.uk/manage-project/share-your-research/research-outcomes-and-researchfish	Cambridge 성과보고·Researchfish 안내
+uk	casrai-researchfish	html	n	https://www.casrai.org/guides/researchfish	CASRAI Researchfish 가이드 (스핀아웃 정의)
+uk	epsrc-outcomes-2022	pdf	n	https://www.ukri.org/wp-content/uploads/2023/05/EPSRC-04052023-EPSRC-Research-Outcomes-2022-Final.pdf	EPSRC Research Outcomes 2022
+uk	gtr-top	html	y	https://gtr.ukri.org/	Gateway to Research 첫 화면
+uk	researchfish-closure	html	n	https://www.dementiaresearcher.nihr.ac.uk/researchfish-closure-2027/	Researchfish 2027 종료 안내
+uk	lse-researchfish	html	n	https://info.lse.ac.uk/staff/divisions/research-and-innovation/research/Researchfish.aspx	LSE Researchfish 안내 (실현 성과만 보고)
+korea	kisti-scienceon-por	html	y	https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400000471	KISTI 연차보고서 (ScienceON, 기준 사례)

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<meta name="author" content="{{ site.author.name }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+{%- comment -%} 링크를 메신저·메일로 공유할 때 미리보기가 뜨도록 한다 {%- endcomment -%}
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="{% if page.title and page.title != site.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:card" content="summary">
+<style>
+:root{
+  --ink:#1a1c1e; --ink-soft:#5b6068; --line:#e3e6ea; --line-soft:#f0f2f4;
+  --bg:#ffffff; --bg-soft:#fafbfc; --accent:#0b5cad; --accent-soft:#eaf2fb;
+  --mark:#b8860b; --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard",
+         "Noto Sans KR","맑은 고딕",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+     font-size:16px;line-height:1.75;word-break:keep-all;overflow-wrap:break-word}
+
+/* ── 머리말 ── */
+.site-head{border-bottom:1px solid var(--line);background:var(--bg-soft)}
+.site-head .inner{max-width:1180px;margin:0 auto;padding:14px 20px;
+  display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline}
+.site-head a.home{font-weight:700;color:var(--ink);text-decoration:none;font-size:15px}
+.site-head nav{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13.5px}
+.site-head nav a{color:var(--ink-soft);text-decoration:none;padding:2px 0;
+  border-bottom:1.5px solid transparent}
+.site-head nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.site-head nav a[aria-current]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+
+/* ── 레이아웃 ── */
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px;
+  display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:44px;align-items:start}
+main{min-width:0;padding:34px 0 88px}
+
+/* ── 목차 ── */
+#toc{position:sticky;top:20px;margin-top:34px;max-height:calc(100vh - 44px);
+  overflow-y:auto;font-size:13.5px;line-height:1.6;
+  border-left:1px solid var(--line);padding:2px 0 2px 16px}
+#toc>div>.toc-title{font-weight:700;font-size:12px;letter-spacing:.06em;
+  color:var(--ink-soft);text-transform:uppercase;margin-bottom:10px}
+#toc ol{list-style:none;margin:0;padding:0}
+#toc li{margin:0 0 3px}
+#toc li.lv3{padding-left:13px;font-size:12.8px}
+#toc a{color:var(--ink-soft);text-decoration:none;display:block;padding:2px 0}
+#toc a:hover{color:var(--accent)}
+#toc a.on{color:var(--accent);font-weight:600}
+#toc:not(:has(ol)){display:none}
+
+/* ── 본문 ── */
+main h1{font-size:30px;line-height:1.35;margin:0 0 20px;letter-spacing:-.01em}
+main h2{font-size:22px;margin:44px 0 14px;padding-bottom:7px;
+  border-bottom:1px solid var(--line)}
+main h3{font-size:17.5px;margin:30px 0 10px}
+main h4{font-size:15.5px;margin:22px 0 8px;color:var(--ink-soft)}
+main p{margin:0 0 15px}
+main ul,main ol{margin:0 0 15px;padding-left:1.45em}
+main li{margin:0 0 5px}
+main li>ul,main li>ol{margin:5px 0 0}
+main a{color:var(--accent);text-decoration:none;border-bottom:1px solid #cddff0}
+main a:hover{border-bottom-color:var(--accent)}
+main strong{font-weight:700}
+main hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+
+blockquote{margin:0 0 18px;padding:12px 16px;background:var(--accent-soft);
+  border-left:3px solid var(--accent);border-radius:0 4px 4px 0;color:#24405e}
+blockquote p:last-child{margin-bottom:0}
+
+code{font-family:var(--mono);font-size:.875em;background:var(--line-soft);
+  padding:.14em .38em;border-radius:3px}
+pre{background:var(--bg-soft);border:1px solid var(--line);border-radius:6px;
+  padding:13px 15px;overflow-x:auto;margin:0 0 18px;font-size:13px;line-height:1.6}
+pre code{background:none;padding:0;font-size:inherit}
+
+.table-scroll{overflow-x:auto;margin:0 0 20px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.55}
+th,td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
+thead th{background:var(--bg-soft);font-weight:700;white-space:nowrap}
+tbody tr:nth-child(even){background:#fcfdfe}
+td:has(+td:last-child),table td[align=right],table th[align=right]{text-align:right}
+
+footer.site-foot{border-top:1px solid var(--line);background:var(--bg-soft);
+  font-size:13px;color:var(--ink-soft)}
+footer.site-foot .inner{max-width:1180px;margin:0 auto;padding:22px 20px}
+footer.site-foot a{color:var(--ink-soft)}
+footer.site-foot .disclaimer{max-width:78ch}
+footer.site-foot .disclaimer p{margin:0 0 7px}
+footer.site-foot .meta.byline{margin-top:6px;padding-top:0;border-top:0}
+footer.site-foot .meta{margin:14px 0 0;padding-top:12px;
+  border-top:1px solid var(--line);font-size:12.5px}
+
+/* GitHub 경고 블록 — kramdown 은 [!WARNING] 을 모르므로 스크립트로 바꾼다 */
+blockquote.callout{background:#fff8e6;border-left-color:var(--mark);color:#5c4708}
+blockquote.callout .callout-label{display:block;font-weight:700;font-size:13px;
+  letter-spacing:.03em;margin-bottom:6px;color:var(--mark)}
+
+@media (max-width:900px){
+  /* 한 칸으로 접히면 DOM 순서상 목차가 본문 뒤로 간다. 순서를 뒤집어 위로 올린다 */
+  .wrap{grid-template-columns:minmax(0,1fr);gap:0}
+  #toc{order:-1;position:static;max-height:60vh;margin:20px 0 4px;
+    border-left:0;border:1px solid var(--line);border-radius:6px;
+    background:var(--bg-soft)}
+  #toc>summary{display:block;cursor:pointer;padding:11px 16px;font-weight:700;font-size:13px;
+    letter-spacing:.04em;color:var(--ink-soft);list-style:none}
+  #toc>summary::-webkit-details-marker{display:none}
+  #toc>summary::after{content:" ▾";color:var(--ink-soft)}
+  #toc[open]>summary::after{content:" ▴"}
+  #toc>div{padding:0 16px 14px}
+  #toc>div>.toc-title{display:none}
+  main{padding-top:20px}
+  main h1{font-size:25px}
+}
+@media (min-width:901px){
+  #toc>summary{display:none}
+}
+@media print{
+  .site-head,#toc,footer.site-foot{display:none}
+  .wrap{display:block;max-width:none;padding:0}
+  body{font-size:10.5pt}
+  main h2{page-break-after:avoid} table{page-break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head"><div class="inner">
+  <a class="home" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  <nav>
+  {%- for item in site.nav -%}
+    <a href="{{ item.url | relative_url }}"
+       {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.name }}</a>
+  {%- endfor -%}
+  </nav>
+</div></header>
+
+<div class="wrap">
+  <main>{{ content }}</main>
+  <details id="toc" aria-label="목차" open><summary>목차</summary><div></div></details>
+</div>
+
+<footer class="site-foot"><div class="inner">
+  <div class="disclaimer">
+  {%- for line in site.disclaimer %}
+    <p>{{ line }}</p>
+  {%- endfor %}
+  </div>
+  <p class="meta"><strong>{{ site.title }}</strong> — {{ site.subtitle }}</p>
+  <p class="meta byline">조사·작성 {{ site.author.name }}
+  &lt;<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>&gt;
+  · {{ site.author.affiliation }} ·
+  <a href="https://github.com/{{ site.repository }}">저장소</a> ·
+  문서·도구·데이터 <a href="https://creativecommons.org/licenses/by/4.0/deed.ko">CC BY 4.0</a></p>
+</div></footer>
+
+<script>
+// 목차: 본문 h2/h3 로 만든다. 플러그인 없이 동작하도록 클라이언트에서 생성한다.
+(function () {
+  var main = document.querySelector('main'),
+      toc  = document.getElementById('toc');
+  if (!main || !toc) return;
+
+  // 저장소에는 마크다운만 두므로 문서 안의 링크는 .md 를 가리킨다.
+  // GitHub 웹에서는 그대로 맞고, 여기(Pages)에서는 .html 로 바꿔 준다.
+  main.querySelectorAll('a[href$=".md"]').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (/^(https?:)?\/\//.test(href)) return;      // 바깥 링크는 두고
+    if (/^(tools|data|sources)\//.test(href)) return; // 저장소 파일은 GitHub 로 보낸다
+    a.setAttribute('href', href.replace(/\.md$/, '.html'));
+  });
+  main.querySelectorAll('a[href^="tools/"],a[href^="data/"],a[href^="sources/"]')
+      .forEach(function (a) {
+    a.setAttribute('href',
+      'https://github.com/{{ site.repository }}/blob/master/' + a.getAttribute('href'));
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  });
+
+  // GitHub 의 > [!WARNING] 경고 블록을 살린다. kramdown 은 이 표기를 모른다.
+  var LABEL = { NOTE:'참고', TIP:'도움말', IMPORTANT:'중요',
+                WARNING:'유의', CAUTION:'주의' };
+  main.querySelectorAll('blockquote > p:first-child').forEach(function (p) {
+    var m = /^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*/.exec(p.textContent || '');
+    if (!m) return;
+    p.innerHTML = p.innerHTML.replace(/^\s*\[!\w+\]\s*(<br\s*\/?>)?\s*/, '');
+    var tag = document.createElement('span');
+    tag.className = 'callout-label';
+    tag.textContent = LABEL[m[1]] || m[1];
+    p.parentNode.classList.add('callout');
+    p.parentNode.insertBefore(tag, p);
+  });
+
+  // 표는 좁은 화면에서 가로 스크롤되게 감싼다
+  main.querySelectorAll('table').forEach(function (t) {
+    if (t.parentElement.classList.contains('table-scroll')) return;
+    var box = document.createElement('div');
+    box.className = 'table-scroll';
+    t.parentNode.insertBefore(box, t);
+    box.appendChild(t);
+  });
+
+  var heads = main.querySelectorAll('h2, h3');
+  if (heads.length < 3) return;
+
+  var used = {};
+  var list = document.createElement('ol');
+  heads.forEach(function (h) {
+    if (!h.id) {
+      var base = (h.textContent || '').trim().toLowerCase()
+        .replace(/[^\w가-힣\s-]/g, '').replace(/\s+/g, '-') || 'sec';
+      used[base] = (used[base] || 0) + 1;
+      h.id = used[base] > 1 ? base + '-' + used[base] : base;
+    }
+    var li = document.createElement('li');
+    if (h.tagName === 'H3') li.className = 'lv3';
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = (h.textContent || '').trim();
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+
+  var box = toc.querySelector('div') || toc;
+  var title = document.createElement('div');
+  title.className = 'toc-title';
+  title.textContent = '목차';
+  box.appendChild(title);
+  box.appendChild(list);
+  // 좁은 화면에서는 접어 둔다
+  if (window.matchMedia('(max-width:900px)').matches) toc.removeAttribute('open');
+
+  // 현재 읽는 절 표시
+  var links = {};
+  toc.querySelectorAll('a').forEach(function (a) {
+    links[a.getAttribute('href').slice(1)] = a;
+  });
+  var seen = new Set();
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) seen.add(e.target.id); else seen.delete(e.target.id);
+    });
+    var first = null;
+    heads.forEach(function (h) { if (!first && seen.has(h.id)) first = h.id; });
+    Object.keys(links).forEach(function (id) {
+      links[id].classList.toggle('on', id === first);
+    });
+  }, { rootMargin: '-72px 0px -70% 0px' });
+  heads.forEach(function (h) { io.observe(h); });
+})();
+</script>
+</body>
+</html>

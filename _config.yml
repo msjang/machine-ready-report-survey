@@ -1,0 +1,61 @@
+# 주제 — 제목 꼬리표와 머리글에 쓴다
+title: 해외 R&D 보고 체계와 기계가독성 조사
+# 부제 — 푸터에 쓴다
+subtitle: 성과를 어떤 필드로 받고, 보고서를 어떻게 만들고, 공개 DB로 어떻게 다시 보여주는가
+# 검색·공유 미리보기에 쓰는 설명. 부제보다 구체적으로 적는다
+description: 한국 연구보고서의 병합 표가 담는 정보를 일본·중국·미국·EU·영국은 어떤 입력 필드로 받고 어떤 보고서로 만들며 어떤 공개 DB로 렌더링하는지, 원문 서식·시스템 화면·공개 페이지를 직접 확인해 비교한 기록
+lang: ko-KR
+repository: msjang/machine-ready-report-survey
+
+# 절대 주소. og:url·canonical 에 쓴다
+url: https://msjang.github.io
+baseurl: /machine-ready-report-survey
+
+# 푸터와 메타 태그에 들어가는 작성자 정보
+author:
+  name: 장민석
+  email: msjang@kisti.re.kr
+  affiliation: 한국과학기술정보연구원(KISTI) 과학기술연구망센터
+
+# 테마 젬을 쓰지 않는다. _layouts/default.html 이 전부를 담는다.
+# 레포에는 마크다운만 두고, HTML 은 GitHub Pages 가 빌드한다.
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+
+# 모든 페이지 아래에 붙는 고지. 문구는 여기서 고친다.
+disclaimer:
+  - 본 문서는 작성자 개인의 조사 결과이며 소속 기관의 공식 입장이 아닙니다.
+    각국 제도의 해석에 오류가 있을 수 있으니 인용 전 원문을 확인하시기 바랍니다.
+  - 이 저장소의 문서는 Claude(Anthropic)를 자료 수집·판독 도구로 사용해 작성했습니다.
+    검수를 하였지만 실수가 있을 수 있습니다. 수정이 필요한 경우 레포의
+    <a href="https://github.com/msjang/machine-ready-report-survey/issues">Issue</a>에 남겨주세요.
+  - 인용한 각국 서식·시스템 화면·공개 페이지의 보존 사본은
+    <a href="https://github.com/msjang/machine-ready-report-survey/tree/master/sources">sources/</a>에,
+    비교 데이터는
+    <a href="https://github.com/msjang/machine-ready-report-survey/tree/master/data">data/</a>에
+    두어 원문이 사라져도 추적할 수 있게 했습니다.
+
+nav:
+  - { name: 개요,        url: / }
+  - { name: 비교 리포트,  url: /report.html }
+  - { name: 미국 DoE 심층, url: /findings-usa-doe.html }
+  - { name: 출처,        url: /sources.html }
+  - { name: 남은 질문,    url: /open-questions.html }
+  - { name: 작성 규칙,    url: /PROCESS.html }
+
+# .md 링크를 .html 로 바꿔 주는 설정은 없으므로 문서 안에서는 상대 .md 링크를 쓴다.
+# GitHub 웹에서 읽을 때는 그대로 동작하고, Pages 에서는 레이아웃의 스크립트로 넘어간다.
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+exclude:
+  - tools/
+  - data/
+  - sources/
+  - BRIEF.md
+  - LICENSE
