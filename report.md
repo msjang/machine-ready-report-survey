@@ -11,14 +11,17 @@
 한국 연구보고서의 "사업화 계획 및 무역 수지 개선 효과" 표는 3단 병합 헤더 안에 사업화 소요기간, 예산, 매출 전망, 시장점유율, 수입대체·수출을 한 장에 담습니다. 해당 사항이 없어도 빈 표가 그대로 실립니다. 아래가 그 표입니다. 예상 매출규모와 시장점유율, 수입대체·수출을 현재·3년 후·5년 후로 나누어 받는 전망형 표입니다.
 
 <style>
-.kr-form{border-collapse:collapse;width:100%;font-size:13px;line-height:1.5}
-.kr-form td{border:1px solid #c7ccd1;padding:8px 9px;text-align:center;vertical-align:middle}
+.kr-form{border-collapse:collapse;width:100%;table-layout:fixed;font-size:13px;line-height:1.5}
+.kr-form td{border:1px solid #c7ccd1;padding:8px 9px;text-align:center;vertical-align:middle;word-break:keep-all}
 .kr-form td.l{background:#eef0f2;font-weight:600}
 .kr-form td.h{background:#eef0f2;font-weight:600}
 .kr-form td.e{height:30px}
 </style>
 
 <table class="kr-form">
+<colgroup>
+<col style="width:16%"><col style="width:13%"><col style="width:13%"><col style="width:19.34%"><col style="width:19.33%"><col style="width:19.33%">
+</colgroup>
 <tbody>
 <tr><td class="l" colspan="3">성과</td><td class="e" colspan="3"></td></tr>
 <tr><td class="l" rowspan="8">사업화 계획</td><td class="l" colspan="2">사업화 소요기간(년)</td><td class="e" colspan="3"></td></tr>
