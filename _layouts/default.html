@@ -73,6 +73,10 @@ main a{color:var(--accent);text-decoration:none;border-bottom:1px solid #cddff0}
 main a:hover{border-bottom-color:var(--accent)}
 main strong{font-weight:700}
 main hr{border:0;border-top:1px solid var(--line);margin:34px 0}
+main img{max-width:100%;height:auto;display:block;margin:20px auto;
+  border:1px solid var(--line);border-radius:5px;cursor:zoom-in}
+main a.imglink{border:0;display:block}
+main a.imglink:hover img{border-color:var(--accent)}
 
 blockquote{margin:0 0 18px;padding:12px 16px;background:var(--accent-soft);
   border-left:3px solid var(--accent);border-radius:0 4px 4px 0;color:#24405e}
@@ -208,6 +212,18 @@ blockquote.callout .callout-label{display:block;font-weight:700;font-size:13px;
     box.className = 'table-scroll';
     t.parentNode.insertBefore(box, t);
     box.appendChild(t);
+  });
+
+  // 본문 이미지는 눌러서 원본을 새 창에서 보게 감싼다
+  main.querySelectorAll('img').forEach(function (img) {
+    if (img.closest('a')) return;
+    var a = document.createElement('a');
+    a.href = img.getAttribute('src');
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.className = 'imglink';
+    img.parentNode.insertBefore(a, img);
+    a.appendChild(img);
   });
 
   var heads = main.querySelectorAll('h2, h3');
