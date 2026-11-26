@@ -89,7 +89,7 @@ EU는 "Part A는 시스템이 만들고, Part B는 사람이 쓴다"는 분리�
 
 **재표현.** 입력한 성과는 [Gateway to Research](https://gtr.ukri.org/)에 공개됩니다. 그래서 [기밀 정보를 넣지 말라](https://www.research-services.admin.cam.ac.uk/manage-project/share-your-research/research-outcomes-and-researchfish)는 안내가 붙습니다. 과제 페이지가 레코드를 유형별 목록으로 렌더링하므로, 일본 KAKEN과 같은 "필드 → 공개 페이지" 구조입니다.
 
-변동 사항: Researchfish 운영사 Elsevier가 [2027년 7월 31일 플랫폼을 종료](https://www.dementiaresearcher.nihr.ac.uk/researchfish-closure-2027/)한다고 발표했고, 대체 시스템은 아직 확정되지 않았습니다. Innovate UK 과제는 원래부터 Researchfish가 아니라 [별도의 임팩트 추적 설문](https://www.contractsfinder.service.gov.uk/Notice/Attachment/7813cda8-6cd7-4ad0-a015-bbdcb382662d)으로 사업화 데이터를 받습니다.
+변동 사항: Researchfish 운영사 Elsevier가 2026년 1월 30일, [2027년 7월 31일 플랫폼을 종료](https://www.dementiaresearcher.nihr.ac.uk/researchfish-closure-2027/)한다고 발표했습니다. 그때까지는 정상 운영되며 UKRI의 2027년 제출(2월 1일–3월 11일)도 Researchfish로 받습니다. 종료 이후의 대체 시스템은 아직 확정되지 않았습니다. Innovate UK 과제는 원래부터 Researchfish가 아니라 [별도의 임팩트 추적 설문](https://www.contractsfinder.service.gov.uk/Notice/Attachment/7813cda8-6cd7-4ad0-a015-bbdcb382662d)으로 사업화 데이터를 받습니다.
 
 ## 비교 요약
 
