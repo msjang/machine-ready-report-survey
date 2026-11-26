@@ -73,39 +73,42 @@
 
 썸네일 한 장으로 "표를 데이터에만 쓰는가, 거의 모든 것에 쓰는가"가 드러납니다. 썸네일 격자는 [`tools/birdview.py`](tools/birdview.py)(`pdftoppm` 저해상 렌더 후 타일링)로 누구나 다시 만들 수 있습니다. 일본 NEDO 보고서를 더한 국가별 버드뷰 모음은 [버드뷰](findings-birdview.md)에 있습니다.
 
-## 챕터별 표 비율 — 2024 vs 2025
+## 챕터별 표 비율 — 어떤 표인가 (2024 vs 2025)
 
-버드뷰가 인상이라면, 이번에는 쪽마다 재어 수치로 봅니다. 각 쪽에서 **세로 괘선이 덮는 세로 범위를 쪽 높이로 나눈 값**을 "표 점유율"로 삼았습니다(괘선이 2줄 이상일 때만 셈, 그림·사진은 괘선이 없으면 0, 박스로 감싼 본문·목차도 표로 집계). 측정 도구는 [`tools/measure_tables.py`](tools/measure_tables.py)입니다.
+표라고 다 같은 표는 아닙니다. 데이터표(엑셀에서 처리 가능한 규칙적 격자)는 정당한 쓰임이니, 쪽마다 표 영역을 네 종류로 갈라 색으로 나눴습니다. 분류는 세로 괘선 수·가로 괘선 수·점유율로 판정하며([`tools/measure_tables.py`](tools/measure_tables.py)), 완벽하지는 않지만 경향은 또렷합니다.
 
-정량적 연구개발성과(실적 목록)와 부록은 본래 표일 수밖에 없으니 **별표(\*)**로 구분했습니다.
+<p style="font-size:13.5px;line-height:1.9"><b>범례</b><br>
+<span style="color:#2f9e44">■</span> <b>데이터표</b> — 조밀한 다열 격자(세로 4열↑·가로 8줄↑). 엑셀 처리 가능, <b>문제 삼지 않음</b><br>
+<span style="color:#1971c2">■</span> <b>양식형 표</b> — 라벨·값·중첩형(사업화 표, 초록, 개요 목표표)<br>
+<span style="color:#e8863a">■</span> <b>콜아웃·강조 박스</b> — 작은 1×1·강조 박스. <b>애교</b>로 따로 셈<br>
+<span style="color:#e03131">■</span> <b>구획</b> — SUMMARY·목차처럼 본문을 통째로 감싼 큰 박스<br>
+<span style="color:#9aa0a6">■</span> 표 아님(서술·그림)</p>
 
 <style>
-.tcov td{vertical-align:top;font-size:13.5px}
-.tcov td:first-child{text-align:left}
-.tcov td>div{margin-top:4px}
+.tcat td{vertical-align:top;font-size:13.5px}
+.tcat td:first-child{text-align:left;white-space:nowrap}
+.tcat thead th{text-align:center}
 </style>
 
-<table class="tcov"><thead><tr><th>챕터</th><th>2024 표 점유율</th><th>2025 표 점유율</th></tr></thead><tbody>
-<tr><td style="text-align:left">1. 개요</td><td>62% <span style="color:#5b6068">(14쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:62%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>69% <span style="color:#5b6068">(19쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:69%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr><td style="text-align:left">2. 수행 과정·내용</td><td>31% <span style="color:#5b6068">(84쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:31%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>25% <span style="color:#5b6068">(92쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:25%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr><td style="text-align:left">3. 정성적 성과 (2024)</td><td>29% <span style="color:#5b6068">(53쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:29%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td><span style="color:#9aa0a6">—</span></td></tr>
-<tr><td style="text-align:left">3. 정량적 성과 *</td><td>16% <span style="color:#5b6068">(7쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:16%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>70% <span style="color:#5b6068">(34쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:70%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr><td style="text-align:left">3. 계획외·기여</td><td>18% <span style="color:#5b6068">(10쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:18%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>34% <span style="color:#5b6068">(9쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:34%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr><td style="text-align:left">4. 활용 계획</td><td>38% <span style="color:#5b6068">(2쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:38%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>13% <span style="color:#5b6068">(8쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:13%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr><td style="text-align:left">부록 *</td><td><span style="color:#9aa0a6">—</span></td><td>61% <span style="color:#5b6068">(73쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:61%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
-<tr style="font-weight:700;background:#f6f8fa"><td style="text-align:left">서술 챕터 평균 (정량성과·부록 제외)</td><td>32% <span style="color:#5b6068">(163쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:32%;background:#0b5cad;height:16px;border-radius:3px"></div></div></td><td>32% <span style="color:#5b6068">(128쪽)</span><br><div style="background:#eef0f2;border-radius:3px"><div style="width:32%;background:#b8860b;height:16px;border-radius:3px"></div></div></td></tr>
+<table class="tcat"><thead><tr><th>챕터</th><th>2024</th><th>2025</th></tr></thead><tbody>
+<tr><td style="text-align:left">1. 개요</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:21.2%;background:#2f9e44;height:17px"></div><div style="width:32.6%;background:#1971c2;height:17px"></div><div style="width:7.7%;background:#e03131;height:17px"></div><div style="width:38.5%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 62% · 🟢21 🔵33 🟠0 🔴8 (14쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:8.4%;background:#2f9e44;height:17px"></div><div style="width:39.4%;background:#1971c2;height:17px"></div><div style="width:21.4%;background:#e03131;height:17px"></div><div style="width:30.8%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 69% · 🟢8 🔵39 🟠0 🔴21 (19쪽)</div></td></tr>
+<tr><td style="text-align:left">2. 수행 과정·내용</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:13.9%;background:#2f9e44;height:17px"></div><div style="width:15.3%;background:#1971c2;height:17px"></div><div style="width:0.6%;background:#e8863a;height:17px"></div><div style="width:1.3%;background:#e03131;height:17px"></div><div style="width:68.9%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 31% · 🟢14 🔵15 🟠1 🔴1 (84쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:14.6%;background:#2f9e44;height:17px"></div><div style="width:9.6%;background:#1971c2;height:17px"></div><div style="width:1.1%;background:#e8863a;height:17px"></div><div style="width:74.7%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 25% · 🟢15 🔵10 🟠1 🔴0 (92쪽)</div></td></tr>
+<tr><td style="text-align:left">3. 정성적 성과</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:6.1%;background:#2f9e44;height:17px"></div><div style="width:19.5%;background:#1971c2;height:17px"></div><div style="width:0.7%;background:#e8863a;height:17px"></div><div style="width:2.3%;background:#e03131;height:17px"></div><div style="width:71.3%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 29% · 🟢6 🔵20 🟠1 🔴2 (53쪽)</div></td><td><span style="color:#9aa0a6">—</span></td></tr>
+<tr><td style="text-align:left">3. 정량적 성과*</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:10.8%;background:#2f9e44;height:17px"></div><div style="width:2.4%;background:#1971c2;height:17px"></div><div style="width:3.3%;background:#e8863a;height:17px"></div><div style="width:83.5%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 16% · 🟢11 🔵2 🟠3 🔴0 (7쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:67.5%;background:#2f9e44;height:17px"></div><div style="width:1.8%;background:#1971c2;height:17px"></div><div style="width:0.7%;background:#e8863a;height:17px"></div><div style="width:30.0%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 70% · 🟢68 🔵2 🟠1 🔴0 (34쪽)</div></td></tr>
+<tr><td style="text-align:left">3. 계획외·기여</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:2.6%;background:#2f9e44;height:17px"></div><div style="width:15.6%;background:#1971c2;height:17px"></div><div style="width:81.8%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 18% · 🟢3 🔵16 🟠0 🔴0 (10쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:9.1%;background:#2f9e44;height:17px"></div><div style="width:24.5%;background:#1971c2;height:17px"></div><div style="width:66.4%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 34% · 🟢9 🔵24 🟠0 🔴0 (9쪽)</div></td></tr>
+<tr><td style="text-align:left">4. 활용 계획</td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:38.1%;background:#2f9e44;height:17px"></div><div style="width:61.9%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 38% · 🟢38 🔵0 🟠0 🔴0 (2쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:9.6%;background:#2f9e44;height:17px"></div><div style="width:3.0%;background:#1971c2;height:17px"></div><div style="width:87.4%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 13% · 🟢10 🔵3 🟠0 🔴0 (8쪽)</div></td></tr>
+<tr><td style="text-align:left">부록*</td><td><span style="color:#9aa0a6">—</span></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:53.8%;background:#2f9e44;height:17px"></div><div style="width:6.4%;background:#1971c2;height:17px"></div><div style="width:0.5%;background:#e8863a;height:17px"></div><div style="width:39.3%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 61% · 🟢54 🔵6 🟠0 🔴0 (73쪽)</div></td></tr>
+<tr style="background:#f6f8fa;font-weight:700"><td style="text-align:left">서술 챕터 평균<br><span style="font-weight:400;font-size:12px;color:#5b6068">정량성과·부록 제외</span></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:11.6%;background:#2f9e44;height:17px"></div><div style="width:18.0%;background:#1971c2;height:17px"></div><div style="width:0.5%;background:#e8863a;height:17px"></div><div style="width:2.1%;background:#e03131;height:17px"></div><div style="width:67.8%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 32% · 🟢12 🔵18 🟠1 🔴2 (163쪽)</div></td><td><div style="display:flex;border-radius:3px;overflow:hidden"><div style="width:13.0%;background:#2f9e44;height:17px"></div><div style="width:14.6%;background:#1971c2;height:17px"></div><div style="width:0.8%;background:#e8863a;height:17px"></div><div style="width:3.2%;background:#e03131;height:17px"></div><div style="width:68.4%;background:#eef0f2;height:17px"></div></div><div style="font-size:12px;color:#5b6068;margin-top:2px">전체 32% · 🟢13 🔵15 🟠1 🔴3 (128쪽)</div></td></tr>
 </tbody></table>
 
-<p style="font-size:13px;color:#5b6068">파랑 = 2024, 주황 = 2025. 숫자는 챕터 평균 표 점유율과 쪽수.</p>
+데이터표(🟢)를 빼고 콜아웃(🟠)을 애교로 봐줘도, 읽히는 것은 이렇습니다.
 
-읽히는 것은 이렇습니다.
+- **서술 챕터의 비데이터 표(🔵양식+🔴구획)가 20% 안팎입니다.** 2024년 18+2=20%, 2025년 15+3=18%. 데이터표를 정당하다고 인정해도, 서술 챕터의 다섯 쪽에 한 쪽꼴이 양식·구획 표입니다. 그리고 이 비율은 1년 사이 거의 그대로입니다.
+- **"개요" 챕터가 가장 심합니다.** 과제를 서술로 소개해야 할 개요가 2024년 🔵양식 33% + 🔴구획 8%, 2025년 🔵양식 39% + 🔴구획 21%로, **비데이터 표가 41% → 60%로 오히려 늘었습니다.** 특히 본문을 통째로 감싼 구획(🔴)이 8%에서 21%로 뛰었습니다.
+- **콜아웃·강조 박스(🟠)는 거의 0%입니다.** 말씀대로 애교 수준이라, 문제의 핵심이 아닙니다. 문제는 🔵양식형 표와 🔴구획입니다.
+- **데이터표(🟢)는 제자리를 지킵니다.** 정량적 성과(2025년 🟢68%)와 부록(🟢54%)에 몰려 있고, 이것은 본래 표여야 할 자리입니다. 반대로 개요·정성적 성과처럼 서술이어야 할 챕터는 🟢이 적고 🔵🔴이 많습니다.
 
-- **정량적 성과와 부록을 빼도, 서술 챕터의 약 3분의 1(32%)이 표입니다.** 그리고 이 값은 2024년과 2025년이 **거의 같습니다**(32% → 32%). 양식을 손봐도 서술을 표로 짜는 비율은 바뀌지 않았습니다.
-- **가장 표가 많은 챕터는 "개요"입니다.** 과제를 서술로 소개해야 할 개요 챕터가 2024년 62%, 2025년 69%로, 쪽의 86~90%가 표에 가깝습니다. 서술이어야 할 자리를 표가 차지하고, 2025년에는 오히려 더 늘었습니다.
-- **본문의 대부분을 차지하는 "수행 과정·내용"(84~92쪽)도 25~31%가 표입니다.** 네 쪽에 한 쪽꼴 이상이 표입니다.
-- **29% 늘어난 분량은 서술이 아니라 표로 갔습니다.** 2024년 희박했던 정량적 성과(16%, 7쪽)가 2025년 조밀해지고(70%, 34쪽), 73쪽짜리 부록(61%)이 새로 붙었습니다. "정량적 성과는 어쩔 수 없다"를 인정해도, 늘어난 쪽은 사람이 읽을 서술이 아니라 표였습니다.
-
-요컨대 정량적 성과를 논외로 쳐도, 한국 보고서는 개요부터 본문까지 서술 챕터의 3분의 1 안팎이 표이고, 그 비율은 1년 사이 바뀌지 않았습니다.
+정리하면, **엑셀로 처리 가능한 데이터표는 논외로 쳐도, 한국 보고서는 서술 챕터조차 20% 안팎이 양식·구획 표이고, 개요 챕터는 그 비중이 절반을 넘으며 2025년에 더 늘었습니다.**
 
 ## 비교 요약
 
