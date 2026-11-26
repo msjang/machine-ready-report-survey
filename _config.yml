@@ -38,19 +38,10 @@ disclaimer:
     두어 원문이 사라져도 추적할 수 있게 했습니다.
 
 nav:
-  - { name: 개요,        url: / }
-  - { name: 비교 리포트,  url: /report.html }
-  - { name: 미국 DoE 심층, url: /findings-usa-doe.html }
-  - { name: 중국 표준 GB/T, url: /findings-gbt.html }
-  - { name: 초록·요약문,  url: /findings-abstract.html }
-  - { name: 표 사용,      url: /findings-tables.html }
-  - { name: 버드뷰,       url: /findings-birdview.html }
-  - { name: 아카이브,     url: /findings-archives.html }
-  - { name: 연구지원 안내, url: /findings-guides.html }
-  - { name: 현장의 목소리, url: /findings-voices.html }
-  - { name: 출처,        url: /sources.html }
-  - { name: 남은 질문,    url: /open-questions.html }
-  - { name: 작성 규칙,    url: /PROCESS.html }
+  - { name: 핵심 리포트, url: / }
+  - { name: 별첨,       url: /appendix.html }
+  - { name: 출처,       url: /sources.html }
+  - { name: 작성 규칙,  url: /PROCESS.html }
 
 # .md 링크를 .html 로 바꿔 주는 설정은 없으므로 문서 안에서는 상대 .md 링크를 쓴다.
 # GitHub 웹에서 읽을 때는 그대로 동작하고, Pages 에서는 레이아웃의 스크립트로 넘어간다.

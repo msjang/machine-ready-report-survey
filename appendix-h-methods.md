@@ -1,4 +1,16 @@
-# 남은 질문
+# 별첨 H. 조사 방법·도구·남은 질문
+
+## 조사 방법과 한계
+
+- 각국 과제관리 시스템의 입력 화면 상당수는 로그인 뒤에만 보여, 공개 매뉴얼·서식 파일·체험판·공개 DB로 확인한 범위에서만 비교했습니다. 로그인 전용 화면은 본문에 그 사실을 밝혔습니다.
+- 인용한 원문은 [출처](sources.md)에 URL·수집일·보존 사본 경로를 함께 적었습니다. 원문 사이트가 바뀌어도 [`sources/`](sources/)의 스냅샷으로 확인할 수 있습니다.
+- 각국 제도는 수시로 개정되므로, 특히 영국 Researchfish 종료(2027)처럼 진행 중인 변동은 확인일 기준임을 밝혀 두었습니다.
+
+## 측정 도구
+
+- 원문 보존: [`tools/snapshot.sh`](tools/snapshot.sh) · 대상 목록 [`tools/sources.tsv`](tools/sources.tsv)
+- 버드뷰(전 쪽 썸네일): [`tools/birdview.py`](tools/birdview.py) — `pdftoppm`로 저해상 렌더 후 쪽마다 비율을 지켜 격자로 배치
+- 표 점유율·4분류: [`tools/measure_tables.py`](tools/measure_tables.py) — 쪽에서 세로 괘선이 덮는 세로 범위를 쪽 높이로 나눈 값을 "표 점유율"로 하고, 세로·가로 괘선 수로 데이터표·콜아웃·구획·양식형을 가름. 원자료 [`data/table-coverage_2026-11-26.json`](data/table-coverage_2026-11-26.json)
 
 이번 조사에서 아직 확인하지 못했거나 더 파고들 여지가 있는 것들을 적어 둔다. 확인되는 대로 리포트에 반영하고 여기서 지운다.
 
@@ -9,7 +21,7 @@
 - **영국 Researchfish의 실제 입력 폼.** Common Question Set 정의 문서로 필드를 확인했으나, 로그인 뒤 화면은 캡처하지 못했다.
 - **한국 과제관리 시스템(과제고유번호 입력 화면).** 비교 기준인 한국 쪽도 입력 단계는 로그인 전용이라, 보고서 서식(출력물)만 확인했다.
 
-## 더 볼 것
+### 더 볼 것
 
 - 일본 KAKEN 과제 페이지가 입력 필드를 어떻게 집계하는지 실제 예시 과제로 더 확인.
 - 미국 SBIR Company Commercialization Report의 현재 웹 입력 필드(과거 NSF Revenue Breakdown 표를 대체한 형태) 직접 확인.
