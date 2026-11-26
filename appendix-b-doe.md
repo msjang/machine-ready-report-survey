@@ -12,14 +12,14 @@
 |---|---|---|
 | 보고서 | High Energy Physics Network Requirements Review: Final Report (2024) | 미래 수요 기반의 과학기술연구망 인프라 구축·운영 및 서비스 (2023) |
 | 기관 | DoE 산하 ESnet (Lawrence Berkeley National Laboratory) | KISTI 과학기술연구망센터 |
-| 분량 | 약 427쪽 (LBNL-2001696) | 약 80쪽 |
+| 분량 | 약 427쪽 (LBNL-2001696) | 202쪽 |
 | 원문 | <https://www.es.net/assets/Uploads/20251001-HEP-RR-Final.pdf> | [ScienceON TRKO202400000471](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400000471) |
 
 두 기관은 모두 국가 연구망을 운영한다는 점에서 임무가 거의 같습니다. 그래서 같은 종류의 일을 하는 두 조직이 보고서를 어떻게 쓰는지 나란히 둘 수 있습니다. 보존한 ESnet 목차 발췌는 [`sources/usa/`](sources/usa/esnet-hep-rr-toc_2026-11-26.md)에 있습니다.
 
 ## 시사점 1 — 표는 꼭 필요할 때만, 단순하게
 
-미국 보고서는 427쪽 가운데 앞부분에 표가 거의 없습니다. 수치를 나란히 보여야 하는 자리에서만 단순한 표를 씁니다. 한국 보고서는 80쪽 가운데 앞 20쪽 가까이가 표이고, 그 표가 여러 겹으로 복잡합니다.
+미국 보고서는 427쪽 가운데 앞부분에 표가 거의 없습니다. 수치를 나란히 보여야 하는 자리에서만 단순한 표를 씁니다. 한국 보고서는 202쪽 가운데 앞 20쪽 가까이가 표이고, 그 표가 여러 겹으로 복잡합니다.
 
 - **양식형 표(form-like table)**: 칸 이름이 미리 박혀 있고 사람이 값을 채우는 표
 - **복합·중첩 표(complex/nested table)**: 표 안에 표가 들어가고 셀이 병합된 표

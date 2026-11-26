@@ -90,6 +90,16 @@
 | KISTI 연차보고서 2024 원문 (202쪽) | ScienceON 뷰어 내부 `orgDocDown.do` (TRKO202400000471) | [전체 텍스트](sources/korea/kisti-kreonet-report_2026-11-26.txt.md) · [초록](sources/korea/kisti-kreonet-abstract_2026-11-26.png) · [요약문](sources/korea/kisti-kreonet-summary_2026-11-26.png) · [정량성과 표](sources/korea/kisti-kreonet-quant-table_2026-11-26.png) · [SUMMARY 박스](sources/korea/kisti-kreonet-summary-boxed_2026-11-26.png) · [목차 박스](sources/korea/kisti-kreonet-toc-boxed_2026-11-26.png) (전체 39MB는 미커밋) |
 | KISTI 연차보고서 2025 원문 (260쪽) | [ScienceON 과제 TRKO202600020985](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202600020985) · 뷰어 내부 `orgDocDown.do` | [전체 텍스트](sources/korea/kisti-2025-report_2026-11-26.txt.md) · [초록](sources/korea/kisti-2025-abstract_2026-11-26.png) · [2024 vs 2025 초록 비교](sources/korea/kisti-abstract-2024-vs-2025_2026-11-26.png) · [목차(표 박스, 1쪽)](sources/korea/kisti-2025-toc-boxed_2026-11-26.png) · [SUMMARY(표 박스)](sources/korea/kisti-2025-summary-boxed_2026-11-26.png) (전체 20MB는 미커밋) |
 
+## 연구망 운영 기관의 연차보고서 (대응 기관 비교)
+
+| 문서 | 원문 | 보존 사본 |
+|---|---|---|
+| 国立情報学研究所年報 2024년도 (NII, 280쪽) | [원문](https://www.nii.ac.jp/about/upload/2024-nii-nenpou.pdf) · [연보 목록](https://www.nii.ac.jp/about/overview/annualreport/) | [전체 텍스트](sources/japan/nii-nenpou-2024_2026-11-26.txt.md) · [버드뷰](images/birdview-japan-nii.jpg) (PDF 4MB는 미커밋) |
+| ESnet 2024 Annual Report (48쪽) | [원문](https://www.es.net/assets/pubs_presos/ESnet-2024-AR_Cover+Body_digital_fnl_25-SN-10463-.pdf) · [웹 판](https://annualreports.es.net/) | [전체 텍스트](sources/usa/esnet-ar-2024_2026-11-26.txt.md) · [버드뷰](images/birdview-esnet-ar.jpg) (PDF 23MB는 미커밋) |
+| CNIC 2025년도 부서 결산서 (26쪽) | [원문](https://cnic.cas.cn/xxgk/bmysgk/202608/P020260810333617128671.pdf) | [전체 텍스트](sources/china/cnic-juesuan-2025_2026-11-26.txt.md) · [버드뷰](images/birdview-china-cnic.jpg) (PDF 1.4MB는 미커밋) |
+| CNIC 정보공개 연보 2023 (활동 보고서 아님) | [원문](https://cnic.cas.cn/xxgk/xxgknb/202403/t20240315_7035827.html) | 본문 요약은 [별첨 E](appendix-e-tables.md) |
+| GÉANT 연차보고서 (웹 판) | [ar.geant.org](https://ar.geant.org/) | 웹 전용, 미보존 |
+
 ## 접속 실패·대체 요약
 
 | 문서 | 사유 | 조치 |

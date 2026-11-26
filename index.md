@@ -54,6 +54,14 @@ title: 핵심 리포트
 - 과제를 서술로 소개해야 할 "개요" 챕터는 양식형과 구획을 더한 비율이 1년 사이 41%에서 60%로 늘었습니다.
 - 데이터표(초록)는 정량적 성과와 부록에 몰려 있습니다. 표가 본래 있어야 할 자리입니다.
 
+같은 일을 하는 해외 기관과 견주면 차이가 분명합니다. 일본에서 연구망 SINET을 운영하는 국립정보학연구소(NII)의 연차보고서는 280쪽으로 분량이 비슷하지만, 양식형 표 점유율은 5.2%입니다. 연구업적 110쪽을 병합 표가 아닌 서지 목록으로 싣고, 표는 결산·명단 같은 실제 데이터에만 씁니다. 미국 ESnet은 연차보고서를 48쪽 홍보물로 내고 기술 내용은 서술 위주의 별도 보고서로 나눕니다([별첨 E](appendix-e-tables.md#한눈에-보기-같은-일을-하는-기관의-보고서-버드뷰)).
+
+| 기관(연구망) | 보고서 | 쪽수 | 양식형 표 점유율 |
+|---|---|---|---|
+| KISTI (KREONET) | 연구망 운영 과제 연차보고서 2024·2025 | 202·260 | 14.6%·9.5% |
+| NII (SINET) | 国立情報学研究所年報 2024 | 280 | 5.2% |
+| ESnet | Annual Report 2024 / 요구사항 검토 보고서 | 48 / 427 | 표가 거의 없음 |
+
 목록도 구조가 아닙니다. 보고서의 개조식 목록은 ○ 아래에 - 항목을 한 단계 들여 써서 위계를 나타냅니다. 그러나 ○와 -는 글자이고, 들여쓰기는 앞쪽 공백일 뿐입니다. "이 항목은 저 항목의 하위"라는 정보는 어디에도 저장되지 않습니다.
 
 <div style="display:flex;flex-wrap:wrap;gap:10px;margin:10px 0"><div style="flex:1;min-width:260px;border:1px solid #d0d7de;border-radius:6px;padding:8px 12px"><div style="font-size:12px;color:#868e96;margin-bottom:4px">보고서(HWPX)에서 보이는 모양</div><div style="font-size:13px;line-height:1.7"><span style="color:#1864ab">○</span> 테라급 연구망 인프라 구축 및 안정적 운영<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#b02a2a">-</span> 엑사스케일 데이터 전송용 인프라 구축<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#b02a2a">-</span> 글로벌 협업연구망 구축 및 국제 협력<br><span style="color:#1864ab">○</span> 데이터 중심 연구협업 서비스 개발<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#b02a2a">-</span> 연구망 운영·관리체계 고도화</div></div><div style="align-self:center;color:#adb5bd;font-size:13px">복사해<br>붙이면</div><div style="flex:1;min-width:260px;border:1px solid #f1aeb5;background:#fff5f5;border-radius:6px;padding:8px 12px"><div style="font-size:12px;color:#868e96;margin-bottom:4px">NTIS 요약정보에 남는 모양</div><div style="font-size:13px;line-height:1.7"><span style="color:#1864ab">○</span> 테라급 연구망 인프라 구축 및 안정적 운영<br><span style="color:#b02a2a">-</span> 엑사스케일 데이터 전송용 인프라 구축<br><span style="color:#b02a2a">-</span> 글로벌 협업연구망 구축 및 국제 협력<br><span style="color:#1864ab">○</span> 데이터 중심 연구협업 서비스 개발<br><span style="color:#b02a2a">-</span> 연구망 운영·관리체계 고도화</div></div></div>
