@@ -38,6 +38,7 @@ KISTI는 대한민국 연구보고서가 모이는 종착지이지만, 보고서
 |---|---|
 | [비교 리포트](report.md) | 일본·중국·미국·EU·영국의 입력·보고서·재표현 비교 |
 | [미국 DoE 심층](findings-usa-doe.md) | ESnet 보고서 vs KISTI 연차보고서, 기계가독성 관점 |
+| [초록·요약문](findings-abstract.md) | 서지 메타데이터와 요약을 한 표에 섞는 한국 vs 나누는 해외 |
 | [출처](sources.md) | 인용 원문의 URL·수집일·보존 사본 경로 |
 | [남은 질문](open-questions.md) | 아직 확인하지 못한 로그인 전용 화면 등 |
 | [작성 규칙](PROCESS.md) | 수집·정정·커밋 규칙 |
