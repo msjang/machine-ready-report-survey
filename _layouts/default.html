@@ -4,18 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-<meta name="description" content="{{ page.description | default: site.description }}">
+{%- assign is_home = false -%}
+{%- if page.url == "/" or page.url == "/index.html" -%}{%- assign is_home = true -%}{%- endif -%}
+{%- if is_home or page.title == nil or page.title == site.title -%}
+  {%- assign share_title = site.title -%}
+{%- else -%}
+  {%- capture share_title -%}{{ page.title }} · {{ site.title }}{%- endcapture -%}
+{%- endif -%}
+{%- assign share_desc = page.description | default: site.description | strip_html | strip_newlines -%}
+{%- assign share_image = page.image | default: "/images/og-card.png" | absolute_url -%}
+<meta name="description" content="{{ share_desc | escape }}">
 <meta name="author" content="{{ site.author.name }}">
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 
-{%- comment -%} 링크를 메신저·메일로 공유할 때 미리보기가 뜨도록 한다 {%- endcomment -%}
-<meta property="og:type" content="article">
+{%- comment -%} 링크를 메신저·SNS로 공유할 때 미리보기(제목·설명·썸네일)가 뜨도록 한다.
+카카오톡·페이스북·X·슬랙은 og:*, X는 twitter:* 를 우선 읽는다. 썸네일은 1200×630. {%- endcomment -%}
+<meta property="og:type" content="{% if is_home %}website{% else %}article{% endif %}">
 <meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:locale" content="ko_KR">
-<meta property="og:title" content="{% if page.title and page.title != site.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:title" content="{{ share_title | escape }}">
+<meta property="og:description" content="{{ share_desc | escape }}">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="{{ share_image }}">
+<meta property="og:image:secure_url" content="{{ share_image }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ site.title }}: {{ site.subtitle | escape }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ share_title | escape }}">
+<meta name="twitter:description" content="{{ share_desc | escape }}">
+<meta name="twitter:image" content="{{ share_image }}">
+<meta name="twitter:image:alt" content="{{ site.title }}">
 <style>
 :root{
   --ink:#1a1c1e; --ink-soft:#5b6068; --line:#e3e6ea; --line-soft:#f0f2f4;
