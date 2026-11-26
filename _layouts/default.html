@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{%- comment -%} 일부 원문 사이트(service.most.gov.cn 등)는 외부 Referer가 붙은 요청에 404를 돌려준다.
+바깥 링크를 눌렀을 때 Referer를 보내지 않아 원문이 그대로 열리게 한다. {%- endcomment %}
+<meta name="referrer" content="no-referrer">
 <title>{% if page.title and page.title != site.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 {%- assign is_home = false -%}
 {%- if page.url == "/" or page.url == "/index.html" -%}{%- assign is_home = true -%}{%- endif -%}
