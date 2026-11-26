@@ -44,6 +44,7 @@ KISTI는 대한민국 연구보고서가 모이는 종착지이지만, 보고서
 | [버드뷰](findings-birdview.md) | 국가별 보고서 전 쪽 썸네일 — 한국의 표의 벽 vs 해외의 서술 |
 | [아카이브](findings-archives.md) | R&D 보고서가 쌓이는 국가별 아카이브와 메타데이터 분리(NSF 등) |
 | [연구지원 안내](findings-guides.md) | 국가별 대학 연구지원부서의 제안·보고·템플릿 안내 |
+| [현장의 목소리](findings-voices.md) | 한국의 공개 논의(증언·해법·2026 IRIS 개편)와 이 조사의 자리 |
 | [출처](sources.md) | 인용 원문의 URL·수집일·보존 사본 경로 |
 | [남은 질문](open-questions.md) | 아직 확인하지 못한 로그인 전용 화면 등 |
 | [작성 규칙](PROCESS.md) | 수집·정정·커밋 규칙 |

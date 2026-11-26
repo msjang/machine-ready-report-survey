@@ -47,6 +47,7 @@ nav:
   - { name: 버드뷰,       url: /findings-birdview.html }
   - { name: 아카이브,     url: /findings-archives.html }
   - { name: 연구지원 안내, url: /findings-guides.html }
+  - { name: 현장의 목소리, url: /findings-voices.html }
   - { name: 출처,        url: /sources.html }
   - { name: 남은 질문,    url: /open-questions.html }
   - { name: 작성 규칙,    url: /PROCESS.html }
