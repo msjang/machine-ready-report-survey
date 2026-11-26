@@ -88,7 +88,7 @@
 |---|---|---|
 | KISTI 연차보고서 (ScienceON 과제) | [원문](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202400000471) | [과제 페이지](sources/korea/kisti-scienceon-por_2026-11-26.md) · [화면](sources/korea/kisti-scienceon-por_2026-11-26.png) |
 | KISTI 연차보고서 2024 원문 (202쪽) | ScienceON 뷰어 내부 `orgDocDown.do` (TRKO202400000471) | [전체 텍스트](sources/korea/kisti-kreonet-report_2026-11-26.txt.md) · [초록](sources/korea/kisti-kreonet-abstract_2026-11-26.png) · [요약문](sources/korea/kisti-kreonet-summary_2026-11-26.png) · [정량성과 표](sources/korea/kisti-kreonet-quant-table_2026-11-26.png) · [SUMMARY 박스](sources/korea/kisti-kreonet-summary-boxed_2026-11-26.png) · [목차 박스](sources/korea/kisti-kreonet-toc-boxed_2026-11-26.png) (전체 39MB는 미커밋) |
-| KISTI 연차보고서 2025 원문 (260쪽) | [ScienceON 과제 TRKO202600020985](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202600020985) · 뷰어 내부 `orgDocDown.do` | [전체 텍스트](sources/korea/kisti-2025-report_2026-11-26.txt.md) · [초록](sources/korea/kisti-2025-abstract_2026-11-26.png) · [2024 vs 2025 비교](sources/korea/kisti-abstract-2024-vs-2025_2026-11-26.png) (전체 20MB는 미커밋) |
+| KISTI 연차보고서 2025 원문 (260쪽) | [ScienceON 과제 TRKO202600020985](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202600020985) · 뷰어 내부 `orgDocDown.do` | [전체 텍스트](sources/korea/kisti-2025-report_2026-11-26.txt.md) · [초록](sources/korea/kisti-2025-abstract_2026-11-26.png) · [2024 vs 2025 초록 비교](sources/korea/kisti-abstract-2024-vs-2025_2026-11-26.png) · [목차(표 박스, 1쪽)](sources/korea/kisti-2025-toc-boxed_2026-11-26.png) · [SUMMARY(표 박스)](sources/korea/kisti-2025-summary-boxed_2026-11-26.png) (전체 20MB는 미커밋) |
 
 ## 접속 실패·대체 요약
 
