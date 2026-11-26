@@ -135,7 +135,7 @@ title: 핵심 리포트
 
 <p style="font-size:12px;color:#666">근거: NSF <a href="https://www.nsf.gov/policies/pappg/award-reporting-requirements">보고 요건(PAPPG)</a> · <a href="https://resources.research.gov/common/robohelp/public/WebHelp/Project_Reports.htm">Research.gov 보고 안내</a> · EU <a href="https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867968/Continuous+reporting+on+milestones+deliverables">Continuous Reporting</a> · <a href="https://webgate.ec.europa.eu/funding-tenders-opportunities/spaces/OM/pages/1867970/Reports+and+payment+requests">Reports & payment requests</a> · Researchfish <a href="https://www.imperial.ac.uk/research-and-innovation/research-office/research-outcomes-outputs-and-impact/the-researchfish-system/researchfish-faqs-for-pis/">Imperial FAQ</a> · <a href="https://warwick.ac.uk/services/ris/systems/researchfish/researchfish_delegate_research_team_access.pdf">Warwick 팀 접근 안내</a> · 科研費 <a href="https://www-shinsei.jsps.go.jp/kaken/kakenhi_taiken/taiken_free/kofu/shinsei/pages/jissekiH/inputHojojigyosha.html">전자신청 체험판(실적보고 입력)</a>. 중국은 <a href="appendix-a-countries.md">별첨 A</a>의 공개 매뉴얼 기준.</p>
 
-## 3. 모범 두 가지
+## 3. 모범 세 가지
 
 **중국 GB/T 7713.3-2014.** 과학기술보고 국가표준이 보고서를 서술·구조·관리·보존 메타데이터의 묶음으로 정의하고, 부록에 보고서용 DTD(XML 스키마)와 XSL 양식표를 싣습니다. 내용은 XML로, 판형은 XSL로 분리한 설계를 2014년에 표준으로 정했습니다. 원문은 [보존 PDF](sources/china/gbt-7713-3-2014_2026-11-26.pdf), 전문의 한국어 참고 번역은 [별첨 C-1](appendix-c1-gbt-ko.md), 상세 분석은 [별첨 C](appendix-c-gbt.md)에 있습니다.
 
@@ -148,6 +148,10 @@ title: 핵심 리포트
 기계용  https://api.nsf.gov/services/v1/awards/<번호>.json
 ```
 
+**일본 JSPS 체험판.** JSPS는 科研費 전자신청 시스템의 실적보고 입력 화면을 [로그인 없이 쓸 수 있는 체험판](https://www-shinsei.jsps.go.jp/kaken/kakenhi_taiken/taiken_free/kofu/shinsei/pages/jissekiH/inputGaiyo.html)으로 공개합니다. 실제 과제 데이터 없이도 어떤 칸이 있고 어느 칸이 KAKEN에 공개되는지 누구나 확인할 수 있습니다. 이번 조사에서 각국 입력 화면 가운데 직접 확인할 수 있었던 것도 이 체험판뿐이었습니다([별첨 A](appendix-a-countries.md)).
+
+![JSPS 科研費 체험판의 연구실적 개요 입력 화면. 로그인 없이 열리며, 입력 칸과 공개 여부가 화면에 적혀 있다](images/japan-jsps-input.png)
+
 ## 4. 제안
 
 <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:stretch;margin:12px 0 6px"><div style="flex:1;min-width:180px;display:flex;flex-direction:column;gap:6px"><div style="font-size:12px;font-weight:700;color:#495057">① 한 번 입력 (시스템)</div><div style="background:#e6f4ea;color:#1e7a34;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>과제 메타데이터</b><br><span style="font-size:11.5px">과제번호·기간·예산·기관·참여자</span></div><div style="background:#e6f4ea;color:#1e7a34;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>성과 레코드</b><br><span style="font-size:11.5px">DOI·특허번호·사업화 실적, 식별자로 자동 완성</span></div></div><div style="align-self:center;color:#adb5bd;font-size:20px;padding:0 2px">→</div><div style="flex:1;min-width:180px;display:flex;flex-direction:column;gap:6px"><div style="font-size:12px;font-weight:700;color:#495057">② 연구자가 쓰는 것</div><div style="background:#fdf4d6;color:#8a6d1a;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>연구 내용 서술</b><br><span style="font-size:11.5px">구조화 소스: 제목·목록·데이터표·그림·각주가 구조로 존재</span></div></div><div style="align-self:center;color:#adb5bd;font-size:20px;padding:0 2px">→</div><div style="flex:1;min-width:180px;display:flex;flex-direction:column;gap:6px"><div style="font-size:12px;font-weight:700;color:#495057">③ 자동 생성 (렌더링)</div><div style="background:#e7f0fb;color:#1864ab;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>공개 과제 페이지</b><br><span style="font-size:11.5px">과제번호 = 영구 주소</span></div><div style="background:#e7f0fb;color:#1864ab;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>공개 API (JSON)</b><br><span style="font-size:11.5px">같은 번호로 기계가 조회</span></div><div style="background:#e7f0fb;color:#1864ab;border-radius:6px;padding:7px 10px;font-size:12.5px;line-height:1.4"><b>HWPX·PDF 보고서</b><br><span style="font-size:11.5px">표지·요약·성과표를 필드에서 채움</span></div></div></div><p style="font-size:12.5px;color:#666">같은 원천에서 여러 출력을 만든다. 보고서는 입력 창구가 아니라 출력물 가운데 하나다.</p>
@@ -156,12 +160,13 @@ title: 핵심 리포트
 2. **과제번호를 영구 주소이자 공개 API로 만든다.** 다년 과제 전체를 번호 하나로 가리키고, 연차별 값은 그 안의 속성으로 둔다. 과제·논문·데이터·연구자를 잇는 연결은 이 식별자 위에서 자동으로 만들어진다.
 3. **보고서 본체는 구조화 소스로 쓰고 판형은 렌더링한다.** 제목·목록·데이터표·그림·각주가 구조로 존재하는 소스에서 HWPX·PDF·웹 페이지를 각각 생성한다. HWPX 출력은 [pypandoc-hwpx](https://github.com/msjang/pypandoc-hwpx)로 실증하고 있다.
 4. **표는 데이터일 때만 쓴다.** 양식형 표는 필드나 데이터표로 펴고, 구획·강조용 표는 제목과 글상자로 바꾼다. 사업화 전망처럼 계속 받아야 하는 수치는 연도·항목·단위·값을 갖춘 필드로 받고, 보고서에는 그 필드로 만든 단순한 데이터표를 싣는다.
+5. **입력 시스템을 체험판이나 로컬 실행본으로 공개한다.** 입력 항목이 기계가 읽을 수 있는 명세(JSON 스키마나 API 정의)로 공개되지 않는 한, AI 도구를 만들려면 실제 화면을 대상으로 시험할 수밖에 없다. MCP(Model Context Protocol, AI가 외부 시스템을 도구로 호출하는 표준 방식) 서버나 자동 입력 프로그램이 그런 예다. 그러나 실제 과제 데이터가 든 운영 시스템에서 AI에게 입력을 맡겨 시험하기는 위험하다. JSPS처럼 로그인 없는 체험판을 열거나, IRIS 입력 화면을 누구나 자기 컴퓨터에서 실행할 수 있는 형태로 배포하면, 연구자·기관·개발자 누구든 격리된 환경(샌드박스)에서 AI 기능을 개발하고 검증할 수 있다.
 
 ## 5. 왜 지금인가
 
 - **현장의 요구가 공개적으로 제기됐습니다.** 우종학 교수는 2026년 3월 공개 글에서 IRIS에 논문 7편을 등록하는 16단계를 묘사하며 "같은 정보를 제안서·연차보고·최종보고·성과등록에 네 번 입력한다", "DOI 같은 것만 넣으면 안 될까"라고 물었습니다([별첨 G](appendix-g-voices.md)).
 - **성과 등록은 바뀌기 시작했습니다.** 2026년 11월 IRIS 개편으로 DOI·ISSN만 넣으면 서지정보가 자동 완성됩니다. 다만 이는 성과 등록 화면의 변화이고, 보고서 형식은 그대로입니다.
-- **2027년 IRIS·Ezbaro·RCMS·NTIS 4대 시스템이 통합되고 운영을 KISTI가 맡습니다.** 필드와 식별 체계를 정하는 시점과 겹칩니다.
+- **2027년 IRIS·Ezbaro·RCMS·NTIS 4대 시스템이 통합되고 운영을 KISTI가 맡습니다.** 필드와 식별 체계를 정하고, 통합 시스템의 입력 명세와 체험판을 처음부터 함께 공개할 수 있는 시점입니다.
 
 ## 별첨
 
